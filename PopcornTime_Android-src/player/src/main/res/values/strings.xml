@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="locked">Locked</string>
+    <string name="unlocked">Unlocked</string>
+    <string name="track_audio">Audio track</string>
+    <string name="brightness">Brightness</string>
+    <string name="volume">Volume</string>
+
+    <string name="subtitles">Subtitles</string>
+    <string name="without_subtitle">Without subtitle</string>
+    <string name="custom_subtitle">Custom subtitle</string>
+    <string name="select_subtitle">Select subtitle</string>
+
+    <string name="aspect_ratio">Aspect ratio</string>
+
+    <string name="cast_error_title">Google Cast error</string>
+    <string name="cast_error_not_supported_media_type">Google Cast does not support this media type</string>
+
+</resources>

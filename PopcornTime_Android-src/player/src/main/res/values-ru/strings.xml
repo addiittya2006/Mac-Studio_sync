@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="locked">Заблокировано</string>
+    <string name="unlocked">Разблокировано</string>
+    <string name="track_audio">Аудиодорожка</string>
+    <string name="brightness">Яркость</string>
+    <string name="volume">Громкость</string>
+
+    <string name="subtitles">Субтитры</string>
+    <string name="without_subtitle">Без субтитров</string>
+    <string name="custom_subtitle">Пользовательские субтитры</string>
+    <string name="select_subtitle">Выбор субтитров</string>
+
+    <string name="aspect_ratio">Соотношение сторон</string>
+
+    <string name="cast_error_title">Ошибка Google Cast</string>
+    <string name="cast_error_not_supported_media_type">Google Cast не поддерживает данный видео формат</string>
+
+</resources>

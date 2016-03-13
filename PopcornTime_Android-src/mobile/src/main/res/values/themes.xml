@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Popcorn" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.Popcorn.Classic" parent="Theme.Popcorn">
+        <item name="colorAccent">#ffffff</item>
+        <item name="searchViewStyle">@style/Widget.Popcorn.Classic.SearchView</item>
+        <!-- base -->
+        <item name="baseLabelColor">#ffffff</item>
+        <!-- toolbar -->
+        <item name="toolbar">@style/Widget.Popcorn.Classic.Toolbar</item>
+        <item name="toolbarTitle">@style/Widget.Popcorn.Classic.Toolbar.Title</item>
+        <item name="toolbarPopup">@style/Widget.Popcorn.Classic.Toolbar.Popup</item>
+        <!-- main -->
+        <item name="mainBackground">#313131</item>
+        <!-- drawer -->
+        <item name="drawerBackground">#212121</item>
+        <item name="drawerItemBackground">@drawable/classic_drawer_item_bkg</item>
+        <item name="drawerItemTitleColor">@color/classic_drawer_title_text</item>
+        <item name="drawerItemSubtitleColor">@color/classic_drawer_subtitle_text</item>
+        <item name="drawerDividerColor">@color/classic_drawer_item_active</item>
+        <item name="drawerSubcategoryDividerColor">#ffffff</item>
+        <item name="drawerSubcategoryBackground">@drawable/classic_drawer_subcategory_bkg</item>
+        <item name="drawerSubcategoryIconColor">@color/classic_drawer_subcategory_icon</item>
+        <!-- video -->
+        <item name="videoBackground">@color/classic_video_background</item>
+        <item name="videoPosterShadowLand">@drawable/classic_video_poster_shadow_land</item>
+        <item name="videoPosterShadowPort">@drawable/classic_video_poster_shadow_port</item>
+        <!-- settings -->
+        <item name="settingsHeaderTitleColor">@color/classic_drawer_item_active</item>
+        <item name="settingsItemBackground">@drawable/classic_settings_item_bkg</item>
+        <item name="settingsItemTitleColor">#ffffff</item>
+        <item name="settingsItemSubtitleColor">#a8a8a8</item>
+        <!-- prepare watch -->
+        <item name="prepareWatchProgressBarStyle">@style/PrepareWatchProgressBarStyle</item>
+        <item name="prepareWatchStatusTextStyle">@style/PrepareWatchStatusText</item>
+    </style>
+
+    <style name="Theme.Popcorn.Player.Classic" parent="Theme.Player">
+
+    </style>
+
+</resources>

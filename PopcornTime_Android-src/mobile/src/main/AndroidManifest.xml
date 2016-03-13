@@ -1,0 +1,89 @@
+<manifest
+    package="dp.ws.popcorntime"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="true"/>
+
+    <application
+        android:name="se.popcorn_time.mobile.PopcornApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/application_name"
+        android:largeHeap="true"
+        android:logo="@drawable/ic_launcher">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <activity
+            android:name="se.popcorn_time.mobile.ui.MainActivity"
+            android:configChanges="orientation|screenSize|locale"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="se.popcorn_time.mobile.ui.VLCPlayerActivity"
+            android:configChanges="orientation|screenSize|locale">
+        </activity>
+        <activity
+            android:name="se.popcorn_time.mobile.ui.VideoActivity"
+            android:configChanges="orientation|screenSize|locale"/>
+        <activity
+            android:name="se.popcorn_time.mobile.ui.TrailerActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:theme="@style/Theme.Popcorn"/>
+        <activity
+            android:name="se.popcorn_time.mobile.ui.DownloadsActivity"
+            android:configChanges="orientation|screenSize|locale"/>
+        <activity
+            android:name="se.popcorn_time.mobile.ui.SettingsActivity"
+            android:configChanges="orientation|screenSize|locale"/>
+        <activity
+            android:name="se.popcorn_time.mobile.ui.FolderChooserActivity"
+            android:configChanges="orientation|screenSize|locale"/>
+        <activity
+            android:name="se.popcorn_time.mobile.ui.VpnActivity"
+            android:configChanges="orientation|screenSize|locale"/>
+
+        <service android:name="eu.sesma.castania.castserver.CastServerService"/>
+        <service android:name="se.popcorn_time.base.torrent.TorrentService"/>
+        <service android:name="se.popcorn_time.base.updater.UpdaterService"/>
+
+        <receiver android:name="se.popcorn_time.base.receiver.ConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="se.popcorn_time.base.api.AppApiReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="se.popcorn_time.api.action.VPN"/>
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="se.popcorn_time.base.database.DBProvider"
+            android:authorities="dp.ws.popcorntime"
+            android:exported="false"
+            android:label="@string/application_name"/>
+    </application>
+</manifest>

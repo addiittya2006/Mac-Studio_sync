@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/video_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/application_name"
+            tools:src="@drawable/poster" />
+
+        <View
+            android:layout_width="@dimen/video_poster_shadow_size"
+            android:layout_height="match_parent"
+            android:background="@drawable/classic_video_poster_shadow_land"
+            android:layout_gravity="end" />
+
+        <include
+            android:id="@+id/video_tvshow_info_view"
+            layout="@layout/view_video_info_tvshow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            tools:layout_width="200dp" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/video_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/videoBackground">
+
+        <include
+            android:id="@+id/video_content_view"
+            layout="@layout/view_video_content_tvshow"
+            tools:visibility="visible" />
+    </FrameLayout>
+</LinearLayout>

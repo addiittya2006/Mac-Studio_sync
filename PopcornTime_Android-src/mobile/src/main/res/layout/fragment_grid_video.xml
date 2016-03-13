@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:gravity="center_horizontal"
+    android:horizontalSpacing="@dimen/video_grid_spacing"
+    android:verticalSpacing="@dimen/video_grid_spacing"
+    android:listSelector="@android:color/transparent"
+    android:numColumns="@integer/grid_video_num_columns"
+    android:overScrollMode="never"
+    android:padding="@dimen/video_grid_padding"
+    android:splitMotionEvents="false"
+    android:stretchMode="columnWidth" />

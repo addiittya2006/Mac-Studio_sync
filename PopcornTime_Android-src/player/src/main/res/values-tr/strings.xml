@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="locked">Kilitli</string>
+    <string name="unlocked">Kilitsiz</string>
+    <string name="track_audio">Ses izi</string>
+    <string name="brightness">Parlaklık</string>
+    <string name="volume">Ses Düzeyi</string>
+
+    <string name="subtitles">Altyazılar</string>
+    <string name="without_subtitle">Altyazısız</string>
+    <string name="custom_subtitle">Özel altyazı</string>
+    <string name="select_subtitle">Altyazı seç</string>
+
+    <string name="aspect_ratio">Aspect ratio</string>
+
+    <string name="cast_error_title">Google Cast hatası</string>
+    <string name="cast_error_not_supported_media_type">Google Cast bu medya türünü desteklemiyor.</string>
+
+</resources>

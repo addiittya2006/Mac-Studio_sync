@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Theme -->
+    <string-array name="themes">
+        <item>@string/classic</item>
+    </string-array>
+
+    <!-- Hardware acceleration -->
+    <string-array name="accelerations">
+        <item>@string/hardware_acceleration_automatic</item>
+        <item>@string/hardware_acceleration_disabled</item>
+        <item>@string/hardware_acceleration_decoding</item>
+        <item>@string/hardware_acceleration_full</item>
+    </string-array>
+
+    <!-- Subtitle font size -->
+    <string-array name="font_size_names">
+        <item>@string/extra_small</item>
+        <item>@string/small</item>
+        <item>@string/normal</item>
+        <item>@string/large</item>
+        <item>@string/extra_large</item>
+    </string-array>
+
+    <!-- Subtitle font color -->
+    <string-array name="font_color_names">
+        <item>@string/white</item>
+        <item>@string/yellow</item>
+    </string-array>
+
+</resources>

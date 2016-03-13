@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="interface_native">
+        <item>English</item>
+        <item>Español</item>
+        <item>Nederlands</item>
+        <item>Brazilian Portuguese</item>
+        <item>Pусский</item>
+        <item>Türkçe</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="interface_locale">
+        <item>en</item>
+        <item>es</item>
+        <item>nl</item>
+        <item>pt_BR</item>
+        <item>ru</item>
+        <item>tr</item>
+        <item>it</item>
+    </string-array>
+</resources>

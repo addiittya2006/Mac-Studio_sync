@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/video_grid_width"
+        android:layout_height="@dimen/video_grid_height"
+        android:background="@drawable/poster_shadow"
+        android:padding="1dp">
+
+        <com.makeramen.RoundedImageView
+            android:id="@+id/video_poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/poster_selector"
+            android:clickable="true"
+            android:padding="1dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/poster"
+            app:riv_corner_radius="@dimen/poster_radius"
+            app:riv_mutate_background="true"
+            app:riv_tile_mode="clamp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/video_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:ellipsize="none"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/video_grid_name_text"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/video_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:textColor="#888888"
+        android:textSize="@dimen/video_grid_year_text"
+        tools:text="2015" />
+
+</LinearLayout>

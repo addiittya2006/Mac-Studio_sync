@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:id="@+id/prepare_status_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/prepare_status_progress"
+            style="?attr/prepareWatchProgressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:progress="10"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/prepare_status_info"
+                style="?attr/prepareWatchStatusTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                tools:text="100kb/s"/>
+
+            <TextView
+                android:id="@+id/prepare_status_percent"
+                style="?attr/prepareWatchStatusTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                tools:text="60%"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/prepare_popcorn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/loading_popcorn"
+        android:visibility="gone"
+        tools:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/prepare_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:background="@null"
+        android:padding="10dp"
+        android:src="@drawable/ic_close_white_36dp"/>
+</FrameLayout>

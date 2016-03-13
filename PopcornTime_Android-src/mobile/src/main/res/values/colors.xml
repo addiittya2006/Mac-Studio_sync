@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- popcorn -->
+    <color name="p_video_watch_pressed">#0195d2</color>
+    <color name="p_video_watch_unpressed">#3da8d4</color>
+    <color name="p_video_trailer_pressed">#b80000</color>
+    <color name="p_video_trailer_unpressed">#ff0000</color>
+
+    <!-- classic -->
+    <color name="classic_watch_text">#23434f</color>
+    <color name="classic_text_shadow">#a6e3f5</color>
+    <color name="classic_download_start">#86c44f</color>
+    <color name="classic_download_end">#3c7a1a</color>
+    <color name="classic_open_start">#828282</color>
+    <color name="classic_open_end">#525252</color>
+    <color name="classic_poster_shadow">#ee282828</color>
+
+
+    <color name="classic_drawer_item_active">#42A5F5</color>
+    <color name="classic_drawer_subcategory_active">#90CAF9</color>
+
+    <color name="classic_video_background">#000000</color>
+
+    <color name="classic_settings_item_active">#1a1a1a</color>
+
+</resources>

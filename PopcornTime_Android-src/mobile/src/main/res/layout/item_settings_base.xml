@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="?attr/settingsItemBackground"
+    android:minHeight="@dimen/settings_item_min_height"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/settings_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/settings_item_title_size"
+            android:textColor="?attr/settingsItemTitleColor"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/settings_item_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/settings_item_subtitle_size"
+            android:textColor="?attr/settingsItemSubtitleColor"
+            tools:text="Subtitle"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/settings_item_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        tools:checked="true"
+        tools:visibility="visible" />
+</LinearLayout>
