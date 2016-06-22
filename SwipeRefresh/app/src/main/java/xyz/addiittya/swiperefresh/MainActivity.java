@@ -97,8 +97,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                                         swipeRefreshLayout.setRefreshing(true);
                                         mRequestQueue.add(jar);
                                     }
-                                }
-        );
+                                });
 
     }
 
