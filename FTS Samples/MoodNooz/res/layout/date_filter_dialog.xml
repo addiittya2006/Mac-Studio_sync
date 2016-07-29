@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="330dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.moodnooz.ui.MoodNoozTextViewGosmick
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/btn_bg"
+        android:text="@string/filter_by_date"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="26dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <com.moodnooz.ui.MoodNoozTextView
+            android:id="@+id/today"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:onClick="dateChoiceClicked"
+            android:text="@string/today"
+            android:textColor="@color/btn_bg"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/divider" />
+
+        <com.moodnooz.ui.MoodNoozTextView
+            android:id="@+id/this_week"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:onClick="dateChoiceClicked"
+            android:text="@string/this_week"
+            android:textColor="@color/btn_bg"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/divider" />
+
+        <com.moodnooz.ui.MoodNoozTextView
+            android:id="@+id/this_month"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:onClick="dateChoiceClicked"
+            android:text="@string/this_month"
+            android:textColor="@color/btn_bg"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/divider" />
+
+        <com.moodnooz.ui.MoodNoozTextView
+            android:id="@+id/this_year"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:onClick="dateChoiceClicked"
+            android:text="@string/this_year"
+            android:textColor="@color/btn_bg"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/divider" />
+
+        <com.moodnooz.ui.MoodNoozTextView
+            android:id="@+id/none"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:onClick="dateChoiceClicked"
+            android:text="@string/none"
+            android:textColor="@color/btn_bg"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/divider" />
+    </LinearLayout>
+
+    <com.moodnooz.ui.MoodNoozTextViewGosmick
+        android:id="@+id/date_ok"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/btn_bg"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textColor="@color/white"
+        android:textSize="26dp" />
+
+</LinearLayout>

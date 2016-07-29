@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/moodnooz_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.moodnooz.ui.MoodNoozTextViewGosmick
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mood"
+            android:textSize="46sp" />
+
+        <com.moodnooz.ui.MoodNoozTextViewGosmickItalic
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nooz"
+            android:textSize="46sp" />
+    </LinearLayout>
+
+</LinearLayout>

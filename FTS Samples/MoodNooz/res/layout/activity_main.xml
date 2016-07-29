@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:alpha="0.7"
+        android:background="@color/search_page_top_bar" >
+
+        <Button
+            android:id="@+id/calendar_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/info_button"
+            android:background="@drawable/calendar_button"
+            android:onClick="calendarButtonClicked" />
+
+        <Button
+            android:id="@+id/info_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/info_button"
+            android:onClick="infoButtonClicked" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/moodnooz_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:orientation="horizontal" >
+
+        <com.moodnooz.ui.MoodNoozTextViewGosmick
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mood"
+            android:textSize="46sp" />
+
+        <com.moodnooz.ui.MoodNoozTextViewGosmickItalic
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="@string/nooz"
+            android:textSize="46sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moodnooz_text_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <EditText
+            android:id="@+id/search_box"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_box_bg"
+            android:gravity="bottom"
+            android:hint="@string/hint_search"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:singleLine="true"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/search_button"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:gravity="right"
+            android:onClick="searchButtonClicked"
+            android:scaleType="centerInside"
+            android:src="@drawable/search_button" />
+    </LinearLayout>
+
+</RelativeLayout>
