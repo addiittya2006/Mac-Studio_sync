@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sorts_key">
+        <item>none</item>
+        <item>dd</item>
+        <item>da</item>
+        <item>sd</item>
+        <item>sa</item>
+        <item>pd</item>
+        <item>pa</item>
+    </string-array>
+    <string-array name="sorts_val">
+        <item>None</item>
+        <item>Date descending</item>
+        <item>Date ascending</item>
+        <item>Size descdending</item>
+        <item>Size ascending</item>
+        <item>Popularity descending</item>
+        <item>Popularity ascending</item>
+    </string-array>
+
+</resources>
