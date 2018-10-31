@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/gallerytitle"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:text="Gallery"
+        android:gravity="center"/>
+
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/gallerytitle">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</android.support.v4.widget.SwipeRefreshLayout>
+</android.support.constraint.ConstraintLayout>

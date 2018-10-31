@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CameraUpload</string>
+
+    <string name="gallery_message">Gallery View</string>
+
+    <string name="capture">Capture!</string>
+    <string name="gallery">Gallery</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This app needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support The new Camera API.</string>
+    <string name="title_activity_crop">CropActivity</string>
+</resources>
