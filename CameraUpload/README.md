@@ -1,9 +1,5 @@
-### CameraUpload
-<br>
-An APK for testing this app is available [here](https://github.com/addiittya2006/CameraUpload/releases). 
-
-Task List:<br>
-
+### CameraUpload ([Test APK](https://github.com/addiittya2006/Mac-Studio_sync/raw/master/CameraUpload/test.apk))
+Task List:
 - [x] Camera
     - [x] flash
     - [ ] zoom (partial)
